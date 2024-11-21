@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HistoriaService } from 'src/app/services/historia.service';
-import { HistoriaBD, PartesHistoria} from 'src/app/interfaces/interfaces';
+import { datosH, infoH} from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
 import { DetalleHistoriaComponent } from 'src/app/componentes/detalle-historia/detalle-historia.component';
 
@@ -10,15 +10,14 @@ import { DetalleHistoriaComponent } from 'src/app/componentes/detalle-historia/d
   styleUrls: ['./historia.page.scss'],
 })
 export class HistoriaPage implements OnInit {
-  partesHistoria: PartesHistoria[]=[];
-  historiaBD: HistoriaBD[]=[];
+  partesHistoria: datosH[]=[];
 
   constructor(
     private servicioHistoria: HistoriaService,
     private modalCtrl: ModalController
   ) { }
 
-  async verDetalleHistoria(id: number){
+  async verDetalleHistoria(id: string){
     const modal = await this.modalCtrl.create({
       component: DetalleHistoriaComponent,
       componentProps: {id}
@@ -28,17 +27,20 @@ export class HistoriaPage implements OnInit {
 
   ngOnInit() {
     this.servicioHistoria.getHistoria()
+    .subscribe((resp) => {
+      console.log(resp[0].payload.doc)
+      resp.forEach(obj => {
+        this.partesHistoria.push({
+          id: obj.payload.doc.id,
+          data: <infoH>obj.payload.doc.data(),
+        });
+      });
+    });
+    /*this.servicioHistoria.getHistoria()
     .subscribe((datos: any) => {
       console.log(datos);
       this.historiaBD = datos;
       this.partesHistoria = datos.historia;
-    });
+    });*/
   }
-    /*this.servicioPersonajes.getDatos()
-    .subscribe((datos: any) => {
-      console.log(datos);
-      this.respuestaBD = datos;
-      this.personajesRecientes = datos.data;
-    });
-  }*/
 }

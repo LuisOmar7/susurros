@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HistoriaService } from 'src/app/services/historia.service';
-import { PartesH } from 'src/app/interfaces/interfaces';
+import { infoH } from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -11,7 +11,7 @@ import { ModalController } from '@ionic/angular';
 export class DetalleHistoriaComponent  implements OnInit {
 
   @Input() id:any;
-  partesHistoria = {} as PartesH;
+  partesHistoria = {} as infoH;
 
   constructor(
     private detalle: HistoriaService,
@@ -24,11 +24,16 @@ export class DetalleHistoriaComponent  implements OnInit {
 
   ngOnInit() {
     this.detalle.getDetalleH(this.id)
+    .subscribe((respuesta) => {
+      console.log('Detalle Historia', respuesta)
+      this.partesHistoria = <infoH>respuesta;
+    });
+    /*this.detalle.getDetalleH(this.id)
     .subscribe((respuesta: PartesH) => {
       console.log('Id de historia', this.id);
       console.log('Detalle Historia', respuesta);
       this.partesHistoria = respuesta;
-    })
+    })*/
   }
 
 }
