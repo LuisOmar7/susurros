@@ -1,0 +1,45 @@
+
+ion-content {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --border: 2px solid rgb(31,41,55);
+  }
+  
+ion-toolbar {
+    --background: rgb(148, 10, 10);
+    --color: white;
+  }
+
+ion-card{
+    --color: rgb(255, 255, 255);
+    --border: 2px solid rgb(31,41,55)
+}
+
+.custom-modal-content {
+    --background: transparent; /* Fondo del contenido del modal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    height: auto;
+    background-color: #000;
+  }
+  
+  .custom-card {
+    width: 96%; /* Para que ocupe todo el ancho */
+    height: auto; /* Para que ocupe todo el alto */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letras blancas */
+    border: 2px solid #8f0000; /* Borde gris fuerte */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el tamaño incluya el borde */
+    padding: 16px; /* Añade un poco de espacio interior */
+  }
+  
+  .custom-card ion-card-header,
+  .custom-card ion-card-content {
+    color: #fff; /* Asegura que el texto dentro también sea blanco */
+  }
+  
+

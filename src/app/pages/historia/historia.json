@@ -1,0 +1,64 @@
+{
+    "historia": [
+        {
+            "id": 0,
+            "titulo": "Brenda Sofia",
+            "subtitulo": "Antecedentes",
+            "imagen": "assets/img/brenda.jpg",
+            "titulo1": "Persecusión del pasado",
+            "texto1": "Brenda Sofía, marcada por una infancia de aventura junto a su padre, sufrió una experiencia traumática cuando, siendo niña, se perdieron juntos en un bosque inhóspito. Sobrevivieron algunos días en la naturaleza hasta que su padre, al borde de sus fuerzas, hizo el sacrificio último para asegurarse de que Brenda pudiera escapar. Aunque sobrevivió físicamente, el evento dejó una cicatriz indeleble en su mente, una herida de abandono y culpa que la persigue desde entonces. Como adulta, siendo ahora una investigadora, llegóa sus manos la noticia de la tragedia de desapariciones de personas recientes en el mismo bosque, lo que la lleva a investigar, quizás en busca de redención, pero en el trayecto sufre un accidente, cayendo en coma. Dentro de este estado, Brenda se sumerge en un laberinto mental recreado como un bosque sin fin, donde su mente trata de reconciliar el trauma de su infancia. Las desapariciones, el bosque y el trauma se mezclan, creando enemigos y obstáculos que representan sus propios miedos y emociones reprimidas.",
+            "titulo2": "null",
+            "texto2": "null",
+            "titulo3": "null",
+            "texto3": "null"
+        },
+        {
+            "id": 1,
+            "titulo": "Escenarios Psicológicos",
+            "subtitulo": "Impacto psicológico manifestado en escenarios",
+            "imagen": "assets/img/escenarios.jpg",
+            "titulo1": "Bosque Maldito",
+            "texto1": "El bosque es una representación de su mente fragmentada, lleno de escenarios que simbolizan sus emociones y los recuerdos de su infancia. Cada área del bosque representa aspectos como la culpa, el miedo a la pérdida, y la necesidad de enfrentarse a su dolor.",
+            "titulo2": "Laberinto",
+            "texto2": "El Laberinto de la Memoria Perdida: Este laberinto representa la confusión y los recuerdos fragmentados de Brenda sobre el accidente y la pérdida de su padre. El lugar es oscuro, con paredes cubiertas de musgo y lianas que parecen moverse, distorsionando los caminos y escondiendo pistas de salida. A medida que avanza, los caminos se desdoblan en versiones cambiantes de sus recuerdos de la infancia, algunos hermosos y otros distorsionados y sombríos, reflejando su temor de no poder diferenciar la realidad de la ficción. Cada giro equivocado en el laberinto lleva a Brenda a enfrentar recuerdos dolorosos, como la imagen de su padre desapareciendo en la oscuridad o sus propios gritos de niña perdida en el bosque. Este escenario simboliza su lucha interna por encontrar la verdad en sus recuerdos y aceptar lo sucedido sin perderse en la desesperación. La única salida requiere que ella acepte su propia memoria y se reconcilie con su pasado sin intentar cambiarlo.",
+            "titulo3": "Mazmorra",
+            "texto3": "La Mazmorra del Miedo y la Culpa: La mazmorra es un lugar opresivo, construido de piedra oscura y barro, usado para apisionar y reprimir sus sentimientos en un desesperado intento por continuar con su vida después de la muerte de su padre. En este lugar, Brenda enfrenta visiones de sí misma atrapada, en distintos estados de miedo y desesperación. La mazmorra simboliza los sentimientos de culpa que ella alberga por haber sobrevivido cuando su padre no pudo. Es un espacio donde el eco de sus pensamientos más oscuros la confronta."
+        },
+        {
+            "id": 2,
+            "titulo": "Enemigos",
+            "subtitulo": "Manifestaciones del trauma",
+            "imagen": "assets/img/enemigos.jpg",
+            "titulo1": "Wendigo",
+            "texto1": "Esta criatura encarna el concepto de hambre insaciable, la idea de que, a pesar de todo lo que el padre de Brenda le dio, ella siente que fue insuficiente para salvarlo. Representa su culpa y la percepción de que su sobrevivencia se llevó la vida de su padre. El Wendigo persigue a Brenda con una voracidad constante, simbolizando cómo esta culpa la consume.",
+            "titulo2": "Merodeador Silencioso",
+            "texto2": "Un espectro que se desplaza en las sombras del bosque, casi imperceptible pero siempre presente. Es la personificación de la soledad y el abandono que Brenda ha sentido desde la muerte de su padre. Cada vez que ella intenta recordar algo positivo, el Merodeador Silencioso parece borrarlo, empujándola a enfrentarse con su vacío emocional.",
+            "titulo3": "Cosechador de Almas",
+            "texto3": "Es el temor que Brenda tiene de olvidar a su padre o de que su propio sacrificio sea en vano. El Cosechador busca recolectar “fragmentos de recuerdos” y la asedia con visiones distorsionadas de su infancia, confundiéndola sobre lo que realmente sucedió. Representa el conflicto de Brenda entre querer recordar y desear olvidar, temiendo que al final el recuerdo de su padre sea solo una sombra en su mente."
+        },
+        {
+            "id": 3,
+            "titulo": "Final del juego",
+            "subtitulo": "Un nuevo despertar",
+            "imagen": "assets/img/despertar.jpg",
+            "titulo1": "final",
+            "texto1": "A medida que Brenda enfrenta a estas criaturas, no descubre que son reflejos desus miedos y que cada uno es parte de su proceso de sanación, sino hastaquedespierta del coma. Con cada enemigo vencido, un poco de paz regresa a su mente, y finalmente, en el corazón del bosque, enfrenta al Cosechador de Almas en un último acto de reconciliación con su pasado. Al vencerlo, Brenda no solo acepta la muerte de su padre, sino también se permite perdonarse a sí misma, logrando despertar del coma y, en el proceso, encontrar una nueva paz.",
+            "titulo2": "null",
+            "texto2": "null",
+            "titulo3": "null",
+            "texto3": "null"
+        },
+        {
+            "id": 4,
+            "titulo": "¿Que le sucedió a Brenda Sofía",
+            "subtitulo": "El coma",
+            "imagen": "assets/img/mental.jpg",
+            "titulo1": "Que sucede en una mente en coma",
+            "texto1": "1. Sueños y Experiencias Visuales. Diversos estudios sugieren que el cerebro en coma puede generar sueños, aunqueestos tienden a ser más confusos y fragmentados. Dado que el cerebro no tiene el mismo ciclo de sueño que una persona consciente, estos “sueños” pueden parecer incoherentes o sin tiempo, y pueden ser influenciados por memorias, emocionesytraumas. 2. Alucinaciones y Escenarios Oníricos. En algunos casos, el cerebro en coma crea experiencias similares a alucinaciones o estados oníricos donde la persona percibe escenarios, voces o visiones. Estas experiencias a veces parecen confusas o angustiantes, ya que el cerebro no tiene la capacidad de reconocer lo que está ocurriendo ni de distinguir la realidad delaficción. 3. Estados de Conciencia Interna. Las emociones y los recuerdos, especialmente aquellos asociados a experiencias fuertes, pueden permanecer activos en la mente de una persona en coma. El cerebro podría tratar de dar sentido a estos recuerdos, creando “escenarios” simbólicos en los que la persona enfrenta conflictos emocionales no resueltos. 4. Simbolización de Miedos y Traumas: En estados de inconsciencia prolongada, el cerebro puede recrear escenarios internos en los que se enfrentan miedos o traumas previos, como una forma de procesamiento interno. Estas experiencias pueden sentirse reales, especialmente si el cerebro asocia esas memorias consentimientos de supervivencia o culpa. 5. Procesos de Recuperación y Reconstrucción. Durante el coma, el cerebro intenta “reorganizarse”, especialmente después de un trauma grave. En ciertos casos, el cerebro puede crear narrativas que incluyen personajes o enemigos que representan diferentes aspectos de los conflictos internos de la persona. Esto permite, de alguna manera, que la mente busque una forma de resolver estos temas mientras intenta sanar. 6. Desenlace y Despertar. Al despertar, las personas en coma a veces reportan haber tenido sueños vívidos o visiones intensas de lo que ahora sabemos que son construcciones del subconsciente. Aquellos que superan estos estados suelen tener una percepción más clara y enfrentan sus experiencias con un nuevo entendimiento sobre los eventos que vivieron.",
+            "titulo2": "null",
+            "texto2": "null",
+            "titulo3": "null",
+            "texto3": "null"
+        }
+    ]
+}

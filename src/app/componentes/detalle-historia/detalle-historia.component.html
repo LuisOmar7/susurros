@@ -1,0 +1,26 @@
+<ion-toolbar>
+  <ion-title>Detalles</ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="regresar()">Cerrar</ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content class="custom-modal-content">
+  <ion-card class="custom-card">
+    <ion-card-title style="color: white;">{{partesHistoria.titulo}}</ion-card-title>
+    <ion-card-subtitle style="color: white;">{{partesHistoria.subtitulo}}</ion-card-subtitle>
+    <div>
+      <h2>{{partesHistoria.titulo1}}</h2>
+      <h5>{{partesHistoria.texto1}}</h5>
+    </div>
+    <!--*ngIf="partesHistoria?.propiedad1 !== null-->
+    <div *ngIf="partesHistoria?.titulo2 !== 'null'">
+      <h2>{{partesHistoria.titulo2}}</h2>
+      <h5>{{partesHistoria.texto2}}</h5>
+    </div>
+    <div *ngIf="partesHistoria?.titulo3 !== 'null'">
+      <h2>{{partesHistoria.titulo3}}</h2>
+      <h5>{{partesHistoria.texto3}}</h5>
+    </div>
+  </ion-card>
+</ion-content>
