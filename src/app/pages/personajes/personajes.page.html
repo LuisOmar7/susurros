@@ -1,3 +1,13 @@
 <app-header titulo="Personajes"></app-header>
 
-<ion-content></ion-content>
+<ion-content style="--ion-background-color: rgb(3, 3, 3);">
+    <div class="container" *ngFor = "let personaje of personajesBD" >
+        <ion-card (click) = "verDetalleP(personaje.id)" style="--ion-background-color: rgb(3, 3, 3); --ion-text-color: #ffffff; border: 2px solid #8f0000; border-radius: 8px;" >
+            <img [src]="personaje.data.foto" />
+            <ion-card-header>
+              <ion-card-title style="color:rgb(255, 255, 255)">{{personaje.data.nombre}}</ion-card-title>
+              <ion-card-subtitle style="color:rgb(255, 255, 255)">{{personaje.data.descripcion}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+    </div>
+</ion-content>

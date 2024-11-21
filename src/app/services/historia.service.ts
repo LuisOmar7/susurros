@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PartesH } from '../interfaces/interfaces';
 //Importación de firestore
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 

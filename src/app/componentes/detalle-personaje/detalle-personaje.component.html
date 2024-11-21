@@ -1,0 +1,59 @@
+<ion-toolbar>
+  <ion-title>Detalles</ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="regresar()">Cerrar</ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content class="custom-modal-content">
+  <ion-card class="character-card">
+    <ion-img src="{{detallePersonaje.foto}}" alt="Personaje"></ion-img>
+    <ion-card class="character-card">
+      <ion-card-content>
+        <h2>{{detallePersonaje.nombre}}</h2>
+        <p>{{detallePersonaje.descripcion}}</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="character-card" style="background-color: black;">
+      <ion-label>Características</ion-label>
+      <div class="stats" style="background-color: black;">
+        <ion-list style="background-color: black; text-align: center;" >
+          <ion-item>
+            <img slot="start" class="icono" alt="vida" src="../../../assets/img/vida.png" style="width: 25px; height: 25px"/>
+            <ion-label>Vida</ion-label>
+            <ion-label color="danger">{{detallePersonaje.vida}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <img slot="start" class="icono" alt="vida" src="../../../assets/img/ataque.png" style="width: 25px; height: 25px"/>
+            <ion-label>Ataque</ion-label>
+            <ion-label color="danger">{{detallePersonaje.ataque}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <img slot="start" class="icono" alt="vida" src="../../../assets/img/arma.png" style="width: 25px; height: 25px"/>
+            <ion-label>Armas</ion-label>
+            <ion-label color="danger">{{detallePersonaje.arma}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+    <ion-card class="character-card">
+      <ion-label>Habilidades</ion-label>
+      <div class="stats" style="background-color: black;">
+        <ion-list style="background-color: black; align-items: center;">
+          <ion-item>- {{detallePersonaje.habilidad1}}</ion-item>
+          <ion-item>- {{detallePersonaje.habilidad2}}</ion-item>
+          <ion-item>- {{detallePersonaje.habilidad3}}</ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+  </ion-card>
+  
+  <!--<ion-card class="custom-card">
+    <ion-card-title style="color: white;">{{detallePersonaje.nombre}}</ion-card-title>
+    <ion-card-subtitle style="color: white;">{{detallePersonaje.descripcion}}</ion-card-subtitle>
+    <div>
+      <h2>{{detallePersonaje.habilidad1}}</h2>
+      <h5>{{detallePersonaje.habilidad2}}</h5>
+    </div>
+  </ion-card>-->
+</ion-content>
