@@ -1,21 +1,22 @@
-.container {
+.contenedor {
   text-align: center;
   color: white;
   background-color: black;
   padding: 20px;
 }
 
-h1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.tarjeta {
+  --ion-background-color: rgb(3, 3, 3);
+  --ion-text-color: #ffffff;
+  border: 2px solid #8f0000;
+  border-radius: 8px;
 }
 
-p {
-  font-size: 1rem;
-  margin: 5px 0;
+.titulo, .subtitulo {
+  color: rgb(255, 255, 255);
 }
 
-.game-image {
+.imagen-juego {
   width: 100%;
   max-width: 300px;
   margin: 20px auto;
@@ -29,4 +30,6 @@ p {
   padding: 15px;
   border-radius: 5px;
 }
+
+
   

@@ -18,11 +18,11 @@ export class DetallePersonajeComponent  implements OnInit {
     private detalle: PersonajesService,
     private modalCtrl: ModalController
   ) { }
-
+  //Método para cerrar el modal
   regresar(){
     this.modalCtrl.dismiss();
   }
-
+  //Método ngOnInit para obtener los datos del detalle de personajes
   ngOnInit() {
     this.detalle.getDetalleP(this.id)
     .subscribe((respuesta) => {

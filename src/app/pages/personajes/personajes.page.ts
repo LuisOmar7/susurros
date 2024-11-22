@@ -12,7 +12,7 @@ import { DetallePersonajeComponent } from 'src/app/componentes/detalle-personaje
   styleUrls: ['./personajes.page.scss'],
 })
 export class PersonajesPage implements OnInit {
-
+  //Inicialización del objeto donde se guardarán los personajes
   personajesBD: datosP[]=[];
 
   constructor(
@@ -20,6 +20,7 @@ export class PersonajesPage implements OnInit {
     private modalCtrl: ModalController
   ) { }
 
+  //Método para ver los detalles del personaje, y crea un modal
   async verDetalleP(id:string){
     const modal = await this.modalCtrl.create({
       component: DetallePersonajeComponent,
@@ -27,7 +28,7 @@ export class PersonajesPage implements OnInit {
     })
     modal.present();
   }
-
+  //Método ngOnInit que obtiene los personajes de la bd de firebase
   ngOnInit() {
     this.servicioPersonajes.getDatosP()
     .subscribe((resp) => {

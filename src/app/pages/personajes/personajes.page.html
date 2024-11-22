@@ -1,13 +1,16 @@
+<!-- Encabezado de personajes -->
 <app-header titulo="Personajes"></app-header>
-
-<ion-content style="--ion-background-color: rgb(3, 3, 3);">
-    <div class="container" *ngFor = "let personaje of personajesBD" >
-        <ion-card (click) = "verDetalleP(personaje.id)" style="--ion-background-color: rgb(3, 3, 3); --ion-text-color: #ffffff; border: 2px solid #8f0000; border-radius: 8px;" >
-            <img [src]="personaje.data.foto" />
-            <ion-card-header>
-              <ion-card-title style="color:rgb(255, 255, 255)">{{personaje.data.nombre}}</ion-card-title>
-              <ion-card-subtitle style="color:rgb(185, 0, 0)">Ver más</ion-card-subtitle>
-            </ion-card-header>
-          </ion-card>
-    </div>
+<!-- Contenido del módulo de personajes -->
+<ion-content class="contenido">
+    <!-- Div contenedor con un for que itera personajesBD y crea una tarjeta por cada personaje que encuentre -->
+  <div class="contenedor" *ngFor="let personaje of personajesBD">
+    <!-- Tarjeta que contiene información del personaje, al hacerle clic aparece el modal con detalles de los personajes -->
+    <ion-card (click)="verDetalleP(personaje.id)" class="tarjeta">
+      <img [src]="personaje.data.foto" class="imagen-personaje"/>
+      <ion-card-header>
+        <ion-card-title class="titulo">{{personaje.data.nombre}}</ion-card-title>
+        <ion-card-subtitle class="subtitulo">Ver más</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
 </ion-content>

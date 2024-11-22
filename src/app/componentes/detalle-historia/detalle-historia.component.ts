@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+//Importaciones necesarias para gestionar el modal
 import { HistoriaService } from 'src/app/services/historia.service';
 import { infoH } from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
@@ -17,23 +18,17 @@ export class DetalleHistoriaComponent  implements OnInit {
     private detalle: HistoriaService,
     private modalCtrl: ModalController
   ) { }
-
+  //Método para cerrar modal
   regresar(){
     this.modalCtrl.dismiss();
   }
-
+  //Método ngOnInit para obtener los detalles de Historia
   ngOnInit() {
     this.detalle.getDetalleH(this.id)
     .subscribe((respuesta) => {
       console.log('Detalle Historia', respuesta)
       this.partesHistoria = <infoH>respuesta;
     });
-    /*this.detalle.getDetalleH(this.id)
-    .subscribe((respuesta: PartesH) => {
-      console.log('Id de historia', this.id);
-      console.log('Detalle Historia', respuesta);
-      this.partesHistoria = respuesta;
-    })*/
   }
 
 }
