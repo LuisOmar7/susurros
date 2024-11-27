@@ -1,0 +1,54 @@
+.contenedor {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .tarjeta {
+    --ion-background-color: rgb(3, 3, 3);
+    --ion-text-color: #ffffff;
+    border: 2px solid #8f0000;
+    border-radius: 8px;
+  }
+
+  .tarjeta2 {
+    --ion-background-color: rgb(3, 3, 3);
+    --ion-text-color: #ffffff;
+    border: 2px solid #535353;
+    border-radius: 8px;
+  }
+  
+  .publicaciones{
+    padding: 20px;
+    --ion-text-color: #ffffff;
+  }
+
+  .titulo, .subtitulo {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    align-content: end;
+  }
+  
+  .imagen-juego {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .video img{
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .sinopsis {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
