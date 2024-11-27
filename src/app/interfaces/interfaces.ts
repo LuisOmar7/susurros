@@ -33,3 +33,41 @@ export interface infoP{
     habilidad2: string;
     habilidad3: string;
 }
+
+//Interfaces para atrapar los datos del módulo Mecánicas
+export interface datosM{
+    id: string;
+    data: infoM;
+}
+export interface infoM{
+    id: number;
+    imagen: string;
+    nombre: string;
+    descripcion: string;
+}
+
+//Interfaces para atrapar los datos del módulo Items
+export interface datosI{
+    id: string;
+    data: infoI;
+}
+export interface infoI{
+    id: number;
+    foto: string;
+    nombreitem: string;
+    descripcion: string;
+    ubicacion: string;
+}
+
+//Interfaces para atrapar los datos de la clasificación
+export interface datosC{
+    id: string;
+    data: infoC;
+}
+export interface infoC{
+    id: number;
+    nombre: string;
+    concepto: string;
+    clasificacion: string;
+    descripcion: string;
+}

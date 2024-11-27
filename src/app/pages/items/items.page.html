@@ -1,3 +1,21 @@
 <app-header titulo="Items"></app-header>
 
-<ion-content></ion-content>
+<!-- Contenido del módulo items -->
+<ion-content>
+    <!-- Contenedor que itera sobre items y genera una tarjeta por cada elemento -->
+    <div class="contenedor" *ngFor="let item of items">
+        <!-- Tarjeta que muestra el modal al hacer clic -->
+        <ion-card class="tarjeta">
+            <img [src]="item.data.foto" class="imagen-juego" />
+            <!-- Tarjeta con el titulo y subtitulo de items -->
+            <ion-card-header>
+                <ion-label class="encabezado">Nombre: </ion-label>
+                <ion-card-title class="titulo">{{item.data.nombreitem}}</ion-card-title>
+                <ion-label class="encabezado">Ubicación: </ion-label>
+                <ion-card-subtitle class="subtitulo">{{item.data.ubicacion}}</ion-card-subtitle>
+                <ion-label class="encabezado">Descripción: </ion-label>
+                <ion-card-content class="subtitulo">{{item.data.descripcion}}</ion-card-content>
+            </ion-card-header>
+        </ion-card>
+    </div>
+</ion-content>

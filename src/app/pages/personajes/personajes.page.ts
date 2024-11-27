@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { datosP, infoP } from '../../interfaces/interfaces';
 //Importación del servicio de personajes
-import { PersonajesService } from 'src/app/services/personajes.service';
+import { SusurrosService } from 'src/app/services/susurros.service';
 //Imortaciones para gestionar el modal
 import { ModalController } from '@ionic/angular';
 import { DetallePersonajeComponent } from 'src/app/componentes/detalle-personaje/detalle-personaje.component';
@@ -16,7 +16,7 @@ export class PersonajesPage implements OnInit {
   personajesBD: datosP[]=[];
 
   constructor(
-    private servicioPersonajes: PersonajesService,
+    private servicioPersonajes: SusurrosService,
     private modalCtrl: ModalController
   ) { }
 

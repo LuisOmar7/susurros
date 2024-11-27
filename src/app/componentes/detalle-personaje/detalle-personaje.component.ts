@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 //Importación de la interfaz donde se guarda la información de personaje
 import {infoP} from '../../interfaces/interfaces';
-import { PersonajesService } from 'src/app/services/personajes.service';
+import { SusurrosService } from 'src/app/services/susurros.service';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -15,7 +15,7 @@ export class DetallePersonajeComponent  implements OnInit {
   detallePersonaje={} as infoP;
 
   constructor(
-    private detalle: PersonajesService,
+    private detalle: SusurrosService,
     private modalCtrl: ModalController
   ) { }
   //Método para cerrar el modal

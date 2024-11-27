@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 //Importaciones necesarias para gestionar el modal
-import { HistoriaService } from 'src/app/services/historia.service';
+import { SusurrosService } from 'src/app/services/susurros.service';
 import { infoH } from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
 
@@ -15,7 +15,7 @@ export class DetalleHistoriaComponent  implements OnInit {
   partesHistoria = {} as infoH;
 
   constructor(
-    private detalle: HistoriaService,
+    private detalle: SusurrosService,
     private modalCtrl: ModalController
   ) { }
   //Método para cerrar modal

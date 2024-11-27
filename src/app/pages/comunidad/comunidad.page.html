@@ -1,6 +1,6 @@
 <app-header titulo="comunidad"></app-header>
 
-<ion-content class="contenedor">
+<!--<ion-content class="contenedor">
   <div class="publicaciones">
     <ion-card class = "tarjeta">
       <ion-card-title class="titulo">Hugo</ion-card-title>
@@ -12,7 +12,45 @@
       </div>
     </ion-card>
   </div>
-</ion-content>
+</ion-content>-->
+  <ion-content>
+    <div class="contenedor">
+      <ion-card class = "tarjeta">
+        <ion-card class="tarjeta">
+          <ion-card-title class="titulo">Comentarios</ion-card-title>
+        </ion-card>
+        <div *ngFor="let mensaje of mensajes" >
+          <ion-card class="tarjeta2">
+            <ion-card-header>
+              <ion-card-title class="titulo">{{ mensaje.nombre }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="comentario">
+              {{ mensaje.comentario }}
+            </ion-card-content>
+          </ion-card>
+      </div>
+      </ion-card>
+    
+      <!-- Formulario para enviar comentarios -->
+      <form (submit)="enviarComentario()">
+        <ion-card class="tarjeta">
+          <ion-card-title class="titulo">¡Haz un comentario!</ion-card-title>
+        </ion-card>
+        <ion-card class="tarjeta">
+          <ion-card class="tarjeta2">
+            <ion-label>Nombre</ion-label>
+            <ion-input [(ngModel)]="nombre" name="nombre" required></ion-input>
+          </ion-card>
+          <ion-card class="tarjeta2">
+            <ion-label>Comentario</ion-label>
+            <ion-textarea [(ngModel)]="comentario" name="comentario" required></ion-textarea>
+          </ion-card>
+            <ion-button expand="block" type="submit" class="boton">Enviar</ion-button>
+        </ion-card>
+      </form>
+    </div>
+  </ion-content>
+
   
 
 

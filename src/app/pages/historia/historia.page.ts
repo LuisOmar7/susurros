@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HistoriaService } from 'src/app/services/historia.service';
+import { SusurrosService } from 'src/app/services/susurros.service';
 //Importaciones para la gestión del modal
 import { datosH, infoH} from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
@@ -15,7 +15,7 @@ export class HistoriaPage implements OnInit {
   partesHistoria: datosH[]=[];
 
   constructor(
-    private servicioHistoria: HistoriaService,
+    private servicioHistoria: SusurrosService,
     private modalCtrl: ModalController
   ) { }
 

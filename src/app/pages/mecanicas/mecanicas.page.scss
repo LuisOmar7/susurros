@@ -1,0 +1,44 @@
+.contenedor {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .tarjeta {
+    --ion-background-color: rgb(3, 3, 3);
+    --ion-text-color: #ffffff;
+    border: 2px solid #8f0000;
+    border-radius: 8px;
+  }
+  
+  .titulo, .subtitulo {
+    color: rgb(255, 255, 255);
+  }
+  
+  .imagen-juego {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  .sinopsis {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .encabezado{
+    color:rgb(134, 2, 2);
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+
+  .mas{
+    color:rgb(134, 2, 2);
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }

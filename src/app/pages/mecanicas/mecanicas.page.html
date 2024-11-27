@@ -1,3 +1,18 @@
 <app-header titulo="Historia"></app-header>
 
-<ion-content></ion-content>
+<!-- Contenido del módulo mecanicas -->
+<ion-content>
+    <!-- Contenedor que itera sobre mecanicas y genera una tarjeta por cada elemento -->
+    <div class="contenedor" *ngFor="let mecanica of mecanicas">
+        <!-- Tarjeta que muestra el modal al hacer clic -->
+        <ion-card class="tarjeta">
+            <img [src]="mecanica.data.imagen" class="imagen-juego" />
+            <!-- Tarjeta con el titulo y subtitulo de historia -->
+            <ion-card-header>
+                <ion-label class="encabezado">Nombre: </ion-label>
+                <ion-card-title class="titulo">{{mecanica.data.nombre}}</ion-card-title>
+                <ion-card-subtitle class="mas">Ver más</ion-card-subtitle>
+            </ion-card-header>
+        </ion-card>
+    </div>
+</ion-content>
