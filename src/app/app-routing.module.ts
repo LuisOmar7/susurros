@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'clasificacion',
     loadChildren: () => import('./pages/clasificacion/clasificacion.module').then( m => m.ClasificacionPageModule)
+  },  {
+    path: 'comunidad',
+    loadChildren: () => import('./pages/comunidad/comunidad.module').then( m => m.ComunidadPageModule)
   },
+
 ];
 
 @NgModule({
