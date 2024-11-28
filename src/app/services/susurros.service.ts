@@ -12,25 +12,25 @@ export class SusurrosService {
 
   //Creación del método para obtener los datos de Historia
   getHistoria() {
-    //return this.http.get('https://susurrosbosque-2ec78-default-rtdb.firebaseio.com/.json');
     //Retorno de los datos de la colección "historia"
     return this.firestore.collection('historia', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Historia para el detalle
   getDetalleH(id: string) {
-    //return this.http.get<PartesH>(`https://susurrosbosque-2ec78-default-rtdb.firebaseio.com/historia/${id}.json`);
     //Retorno de los datos de la colección "historia" para el modal
     return this.firestore.collection('historia').doc(id).valueChanges();
   }
 
   //Creación del método para obtener los datos de Personajes
   getDatosP() {
+    //Retorno de los personajes.
     return this.firestore.collection('personajes',  ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Personajes para detalle
   getDetalleP(id: string) {
+    //Retorno del id de los personajes para el modal
     return this.firestore.collection('personajes').doc(id).valueChanges();
   }
 
@@ -39,24 +39,19 @@ export class SusurrosService {
     return this.firestore.collection('mecanicas', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
-  //Creación del método para obtener los datos de Mecánicas para detalle
-  getDetalleM(id: string) {
-    return this.firestore.collection('mecanicas').doc(id).valueChanges();
-  }
-
   //Creación del método para obtener los datos de Items
   getDatosI() {
     return this.firestore.collection('items', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
-  //Creación del método para obtener los datos de Items para detalle
-  getDetalleI(id: string) {
-    return this.firestore.collection('items').doc(id).valueChanges();
-  }
-
   //Creación del método para obtener los datos de la Clasificación
   getDatosC() {
     return this.firestore.collection('clasificacion').snapshotChanges();
+  }
+
+  //Creación del método para obtener los datos de los Comentarios
+  getComentarios() {
+    return this.firestore.collection('comentarios', ref => ref.orderBy('fecha', 'asc')).snapshotChanges();
   }
 
 }

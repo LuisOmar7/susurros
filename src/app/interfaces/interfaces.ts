@@ -71,3 +71,14 @@ export interface infoC{
     clasificacion: string;
     descripcion: string;
 }
+
+//Interfaces para atrapar los comentarios
+export interface dataComents{
+    id: string;
+    data: coments;
+}
+export interface coments{
+    nombre: string;
+    comentario: string;
+    fecha: Date;
+}

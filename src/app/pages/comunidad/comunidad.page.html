@@ -23,14 +23,12 @@
     <!--Lista de comentarios-->
     <ion-card class="tarjeta">
       <ion-card-title class="titulo">Comentarios</ion-card-title>
-      <div *ngFor="let mensaje of mensajes">
         <ion-list>
-          <ion-card class="tarjeta2">
-            <ion-card-title class="encabezado">{{mensaje.nombre}} :</ion-card-title>
-            <ion-card-content class="titulo">{{mensaje.comentario}}</ion-card-content>
+          <ion-card class="tarjeta2" *ngFor="let mensaje of mensajes">
+            <ion-card-title class="encabezado">{{mensaje.data.nombre}} :</ion-card-title>
+            <ion-card-content class="titulo">{{mensaje.data.comentario}}</ion-card-content>
           </ion-card>
         </ion-list>
-      </div>
     </ion-card>
   </div>
 </ion-content>

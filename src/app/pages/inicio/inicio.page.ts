@@ -8,7 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class InicioPage implements OnInit {
 
-  video1 : any = "https://www.youtube.com/embed/KKylL3uBp20";
+  video1 : any = "https://www.youtube.com/embed/7zm2rtfBOOs";
 
   constructor(private sanitizer: DomSanitizer) { }
 
