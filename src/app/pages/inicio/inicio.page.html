@@ -30,8 +30,7 @@
             </ion-card-title>
             <ion-card class="tarjeta2">
                 <ion-card-content>
-                    <p>Aqui habrá un vídeo</p>
-                    <img src="assets/img/portada.jpg" />
+                    <iframe [src]="mostrarVideo(video1)" width="100%" height="100%"></iframe>
                 </ion-card-content>
                 <ion-button routerLink="/comunidad" class="boton">Comentar</ion-button>
             </ion-card>
