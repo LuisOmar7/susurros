@@ -14,7 +14,7 @@ export class SusurrosService {
   getHistoria() {
     //return this.http.get('https://susurrosbosque-2ec78-default-rtdb.firebaseio.com/.json');
     //Retorno de los datos de la colección "historia"
-    return this.firestore.collection('historia').snapshotChanges();
+    return this.firestore.collection('historia', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Historia para el detalle
@@ -26,7 +26,7 @@ export class SusurrosService {
 
   //Creación del método para obtener los datos de Personajes
   getDatosP() {
-    return this.firestore.collection('personajes').snapshotChanges();
+    return this.firestore.collection('personajes',  ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Personajes para detalle
@@ -36,7 +36,7 @@ export class SusurrosService {
 
   //Creación del método para obtener los datos de Mecánicas
   getDatosM() {
-    return this.firestore.collection('mecanicas').snapshotChanges();
+    return this.firestore.collection('mecanicas', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Mecánicas para detalle
@@ -46,7 +46,7 @@ export class SusurrosService {
 
   //Creación del método para obtener los datos de Items
   getDatosI() {
-    return this.firestore.collection('items').snapshotChanges();
+    return this.firestore.collection('items', ref => ref.orderBy('id', 'asc')).snapshotChanges();
   }
 
   //Creación del método para obtener los datos de Items para detalle

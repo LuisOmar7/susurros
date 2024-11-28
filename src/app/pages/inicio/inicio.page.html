@@ -1,26 +1,40 @@
 <ion-header>
     <ion-toolbar style="--ion-background-color: rgb(163, 0, 0); --ion-text-color: #ffffff;">
-        <ion-buttons slot = "start">
-            <ion-menu-button menu = "first"></ion-menu-button>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
         </ion-buttons>
-        <ion-title >Inicio</ion-title>
+        <ion-title>Inicio</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <div class="container">
-        <ion-card  style="--ion-background-color: rgb(3, 3, 3); --ion-text-color: #ffffff; border: 2px solid #8f0000; border-radius: 8px;" >
+    <div class="contenedor">
+        <ion-card class="tarjeta">
             <img src="assets/img/portada.jpg" />
             <ion-card-header>
-              <ion-card-title style="color:rgb(255, 255, 255)">Bienvenido a la App Móvil de Susurros del Bosque</ion-card-title>
-              <ion-card-subtitle style="color:rgb(255, 255, 255)">Sinopsis</ion-card-subtitle>
+                <ion-card-title class="titulo">
+                    Bienvenido a la App Móvil de Susurros del Bosque</ion-card-title>
+                <ion-card-subtitle class="subtitulo">Sinopsis</ion-card-subtitle>
             </ion-card-header>
-          
-            <ion-card-content style="color:rgb(255, 255, 255)">
-                Susurros del Bosque es un videojuego de tipo shooter, el cual te sumerge en un mundo sobrenatural con criaturas y escenarios maléficos que deberás superar. Explora temas psicológicos complejos que puedes descubrir en nuestra aplicación móvil.
-            </ion-card-content>
-          </ion-card>
-    </div>
-  </ion-content>
-  
 
+            <ion-card-content class="titulo">
+                Susurros del Bosque es un videojuego de tipo shooter, el cual te sumerge en un mundo sobrenatural con
+                criaturas y escenarios maléficos que deberás superar. Explora temas psicológicos complejos que puedes
+                descubrir en nuestra aplicación móvil.
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card class="tarjeta">
+            <ion-card-title class="titulo">
+                Videos relacionados
+            </ion-card-title>
+            <ion-card class="tarjeta2">
+                <ion-card-content>
+                    <p>Aqui habrá un vídeo</p>
+                    <img src="assets/img/portada.jpg" />
+                </ion-card-content>
+                <ion-button routerLink="/comunidad" class="boton">Comentar</ion-button>
+            </ion-card>
+        </ion-card>
+    </div>
+</ion-content>

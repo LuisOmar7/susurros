@@ -29,13 +29,7 @@ export class ComunidadPage implements OnInit {
         comentario: this.comentario,
         fecha: new Date() 
       };
-
-      // Guardar en Firestore
       this.firestore.collection('comentarios').add(nuevoComentario)
-        .then(() => {
-          this.comentario = '';
-        })
-        .catch(error => console.error('Error al enviar el comentario: ', error));
     }
   }
 }

@@ -1,4 +1,4 @@
-<app-header titulo="Historia"></app-header>
+<app-header titulo="Mecánicas"></app-header>
 
 <!-- Contenido del módulo mecanicas -->
 <ion-content>
@@ -11,7 +11,10 @@
             <ion-card-header>
                 <ion-label class="encabezado">Nombre: </ion-label>
                 <ion-card-title class="titulo">{{mecanica.data.nombre}}</ion-card-title>
-                <ion-card-subtitle class="mas">Ver más</ion-card-subtitle>
+                <ion-card-content>
+                    <ion-label class="encabezado">Descripción: </ion-label>
+                    <h5 class="titulo">{{mecanica.data.descripcion}}</h5>
+                </ion-card-content>
             </ion-card-header>
         </ion-card>
     </div>
