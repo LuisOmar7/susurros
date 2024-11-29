@@ -12,32 +12,17 @@
   border-radius: 8px;
 }
 
-.titulo, .subtitulo {
+.titulo,
+.subtitulo {
   color: rgb(255, 255, 255);
 }
 
-.encabezado{
+.encabezado {
   color: rgb(161, 0, 0);
 }
-  
-  .game-image {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    border-radius: 10px;
-  }
-  
-  .sinopsis {
-    margin-top: 20px;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 5px;
-  }
 
-  .boton{
-    --background: #8f0000; 
-    --color: #ffffff; 
-    --border-radius: 8px; 
-  }
-  
+.boton {
+  --background: #8f0000;
+  --color: #ffffff;
+  --border-radius: 8px;
+}

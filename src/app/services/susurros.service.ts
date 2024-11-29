@@ -10,6 +10,11 @@ export class SusurrosService {
     private firestore: AngularFirestore
   ) { }
 
+  //Creación del método para obtener los datos de Inicio
+  getInicio(){
+    return this.firestore.collection('inicio').snapshotChanges();
+  }
+
   //Creación del método para obtener los datos de Historia
   getHistoria() {
     //Retorno de los datos de la colección "historia"
@@ -52,6 +57,10 @@ export class SusurrosService {
   //Creación del método para obtener los datos de los Comentarios
   getComentarios() {
     return this.firestore.collection('comentarios', ref => ref.orderBy('fecha', 'asc')).snapshotChanges();
+  }
+
+  getVideos(){
+    return this.firestore.collection('videos').snapshotChanges();
   }
 
 }

@@ -1,3 +1,14 @@
+//Interfaces para atrapar los datos del inicio
+export interface datosInicio{
+    id: string;
+    data: inicio;
+}
+export interface inicio{
+    imagen: string;
+    titulo: string;
+    descripcion: string;
+}
+
 //Interfaces para atrapar los datos correspondientes al módulo Historia
 export interface datosH{
     id: string;
@@ -81,4 +92,14 @@ export interface coments{
     nombre: string;
     comentario: string;
     fecha: Date;
+}
+
+//Interfaces para obtener vídeos
+export interface datosV{
+    id: string;
+    data: videos;
+}
+export interface videos{
+    nombre: string;
+    url: string;
 }

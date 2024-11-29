@@ -4,13 +4,14 @@
 <ion-content>
     <!-- Contenedor que itera sobre mecanicas y genera una tarjeta por cada elemento -->
     <div class="contenedor" *ngFor="let mecanica of mecanicas">
-        <!-- Tarjeta que muestra el modal al hacer clic -->
+        <!-- Tarjeta que muestra las mecánicas iteradas -->
         <ion-card class="tarjeta">
             <img [src]="mecanica.data.imagen" class="imagen-juego" />
-            <!-- Tarjeta con el titulo y subtitulo de historia -->
+            <!-- Tarjeta con el encabezado -->
             <ion-card-header>
                 <ion-label class="encabezado">Nombre: </ion-label>
                 <ion-card-title class="titulo">{{mecanica.data.nombre}}</ion-card-title>
+                <!-- Contenido de la tarjeta -->
                 <ion-card-content>
                     <ion-label class="encabezado">Descripción: </ion-label>
                     <h5 class="titulo">{{mecanica.data.descripcion}}</h5>

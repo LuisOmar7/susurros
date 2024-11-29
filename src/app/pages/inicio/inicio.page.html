@@ -1,3 +1,4 @@
+<!-- Encabezado -->
 <ion-header>
     <ion-toolbar style="--ion-background-color: rgb(163, 0, 0); --ion-text-color: #ffffff;">
         <ion-buttons slot="start">
@@ -7,34 +8,33 @@
     </ion-toolbar>
 </ion-header>
 
+<!-- Contenido del inicio -->
 <ion-content>
     <div class="contenedor">
-        <ion-card class="tarjeta">
-            <img src="assets/img/portada.jpg" />
+        <!-- For para iterar los datos de inicio para crear cards -->
+        <ion-card class="tarjeta" *ngFor="let inicio of datosInicio">
+            <img src="{{inicio.data.imagen}}" />
             <ion-card-header>
-                <ion-card-title class="titulo">
-                    Bienvenido a la App Móvil de Susurros del Bosque</ion-card-title>
+                <ion-card-title class="titulo">{{inicio.data.titulo}}</ion-card-title>
                 <ion-card-subtitle class="subtitulo">Sinopsis</ion-card-subtitle>
             </ion-card-header>
-
-            <ion-card-content class="titulo">
-                Susurros del Bosque es un videojuego de tipo shooter, el cual te sumerge en un mundo sobrenatural con
-                criaturas y escenarios maléficos que deberás superar. Explora temas psicológicos complejos que puedes
-                descubrir en nuestra aplicación móvil.
-            </ion-card-content>
+            <ion-card-content class="titulo">{{inicio.data.descripcion}}</ion-card-content>
         </ion-card>
-
+        <!-- Card donde se iteran los videos y se muestran -->
         <ion-card class="tarjeta">
             <ion-card-title class="titulo">
                 Videos relacionados
             </ion-card-title>
-            <ion-card class="tarjeta2">
-                <ion-card-title class="encabezado">Nivel 1. Bosque Maldito</ion-card-title>
+            <ion-card class="tarjeta2" *ngFor = "let video of videos">
+                <ion-card-title class="encabezado">{{video.data.nombre}}</ion-card-title>
                 <ion-card-content>
-                    <iframe [src]="mostrarVideo(video1)" width="100%" height="100%"></iframe>
+                    <!-- Iframe para mostrar el video, por medio de la función mostrarVideo -->
+                    <iframe [src]="mostrarVideo(video.data.url)" width="100%" height="100%" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowfullscreen></iframe>
                 </ion-card-content>
-                <ion-button routerLink="/comunidad" class="boton">Comentar</ion-button>
             </ion-card>
+            <ion-button routerLink="/comunidad" class="boton">Comentar</ion-button>
         </ion-card>
     </div>
 </ion-content>

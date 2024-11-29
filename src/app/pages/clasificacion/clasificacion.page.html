@@ -1,12 +1,12 @@
 <app-header titulo="Clasificación"></app-header>
 
-<!-- Contenido del módulo historia -->
+<!-- Contenido del módulo clasificación -->
 <ion-content>
-    <!-- Contenedor que itera sobre partesHistoria y genera una tarjeta por cada elemento -->
+    <!-- Contenedor que itera sobre clasificacion y genera una tarjeta por cada elemento -->
     <div class="contenedor" *ngFor="let clasif of clasificacion">
-        <!-- Tarjeta que muestra el modal al hacer clic -->
+        <!-- Tarjeta que muestra los datos iterados -->
         <ion-card class="tarjeta">
-            <!-- Tarjeta con el titulo y subtitulo de historia -->
+            <!-- Tarjeta con la clasificación -->
             <ion-card-header>
                 <ion-card-title class="encabezado">{{clasif.data.nombre}}</ion-card-title>
                 <ion-card-subtitle class="subtitulo">{{clasif.data.clasificacion}}</ion-card-subtitle>
@@ -15,6 +15,7 @@
                 </ion-card-content>
             </ion-card-header>
         </ion-card>
+        <!-- Trajeta con información de que es la clasificacion -->
         <ion-card class="tarjeta">
             <ion-card-header>
                 <ion-card-title class="encabezado">¿Qué es la clasificación ESRB?</ion-card-title>

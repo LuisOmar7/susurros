@@ -1,81 +1,59 @@
 .contenedor {
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    height: auto;
-    width: auto;
-  }
-  
-  .tarjeta {
-    --ion-background-color: rgb(3, 3, 3);
-    --ion-text-color: #ffffff;
-    border: 2px solid #8f0000;
-    border-radius: 8px;
-  }
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  height: auto;
+  width: auto;
+}
 
-  .tarjeta2 {
-    --ion-background-color: rgb(3, 3, 3);
-    --ion-text-color: #ffffff;
-    border: 2px solid #535353;
-    border-radius: 8px;
-    color: rgb(255, 255, 255);
-  }
+.tarjeta {
+  --ion-background-color: rgb(3, 3, 3);
+  --ion-text-color: #ffffff;
+  border: 2px solid #8f0000;
+  border-radius: 8px;
+}
 
-  .boton{
-    --background: #8f0000; 
-    --color: #ffffff; 
-    --border-radius: 8px; 
-  }
+.tarjeta2 {
+  --ion-background-color: rgb(3, 3, 3);
+  --ion-text-color: #ffffff;
+  border: 2px solid #535353;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
 
-  .comentario{
-    --ion-background-color: rgb(3, 3, 3);
-    --ion-text-color: #ffffff;
-    border: 2px solid #8f0000;
-    border-radius: 8px;
-    text-align: left;
-    align-items: center;
-    width: 394px;
-    height: 100px;
-    padding: 10px;
-  }
+.boton {
+  --background: #8f0000;
+  --color: #ffffff;
+  --border-radius: 8px;
+}
 
-  .publicaciones{
-    padding: 20px;
-    --ion-text-color: #ffffff;
-  }
+.comentario {
+  --ion-background-color: rgb(3, 3, 3);
+  --ion-text-color: #ffffff;
+  border: 2px solid #8f0000;
+  border-radius: 8px;
+  text-align: left;
+  align-items: center;
+  width: 394px;
+  height: 100px;
+  padding: 10px;
+}
 
-  .titulo, .subtitulo {
-    color: rgb(255, 255, 255);
-    padding: 8px;
-    text-align: left;
-  }
+.publicaciones {
+  padding: 20px;
+  --ion-text-color: #ffffff;
+}
 
-  .encabezado{
-    color: rgb(160, 0, 0);
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .imagen-juego {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    border-radius: 10px;
-  }
+.titulo,
+.subtitulo {
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+}
 
-  .video img{
-    align-items: center;
-    width: 400px;
-    height: 200px;
-    border-radius: 8px;
-  }
-
-  .sinopsis {
-    margin-top: 20px;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
+.encabezado {
+  color: rgb(160, 0, 0);
+  padding: 8px;
+  text-align: left;
+}
