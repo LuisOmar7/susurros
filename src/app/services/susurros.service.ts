@@ -60,7 +60,7 @@ export class SusurrosService {
   }
 
   getVideos(){
-    return this.firestore.collection('videos').snapshotChanges();
+    return this.firestore.collection('videos', ref => ref.orderBy('nombre', 'asc')).snapshotChanges();
   }
 
 }
